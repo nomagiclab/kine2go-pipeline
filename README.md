@@ -6,7 +6,7 @@
 [![License](https://img.shields.io/badge/license-BSD--3--Clause-green)](LICENSE)
 [![Hugging Face Dataset](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Dataset-yellow)](https://huggingface.co/datasets/MIMUW-Robotics/kine2go)
 ![arXiv](https://img.shields.io/badge/arXiv-coming%20soon-b31b1b)
-[![Website](https://img.shields.io/badge/Website-kine2go-blue)](https://nomagiclab.github.io/kine2go/)
+[![Website](https://img.shields.io/badge/Website-kine2go-blue)](https://nomagiclab.github.io/kine2go-pipeline/)
 
 [Installation](#installation) · [Quick Start](#quick-start) · [Pipeline](#pipeline) · [Stage details](#stage-details) · [Tools](#tools)
 
