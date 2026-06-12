@@ -1,0 +1,35 @@
+name: Bug report
+description: Something doesn't work or results don't match the paper
+labels:
+  - bug
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: What happened?
+      description: 'What did you expect, and what happened instead?'
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Install with...
+        2. Run `uv run -m motion_retargeting.main ...`
+        3. See error
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      description: 'OS, Python version, package versions, GPU if relevant'
+      placeholder: 'Ubuntu 22.04, Python 3.12, torch 2.10.0, CUDA 12.1'
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Error output / logs
+      render: shell
