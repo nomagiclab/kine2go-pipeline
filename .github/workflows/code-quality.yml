@@ -1,0 +1,19 @@
+name: "Code Quality"
+
+on: [pull_request]
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup uv
+        uses: astral-sh/setup-uv@v7
+
+      - name: Check linting errors using Ruff
+        run: uvx ruff check --output-format=github .
+
+      - name: Check formatting errors using Ruff
+        run: uvx ruff format --check --preview --output-format=github .
