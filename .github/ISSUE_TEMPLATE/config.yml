@@ -1,0 +1,5 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Extension ideas / research directions
+    url: 'https://github.com/nomagiclab/kine2go-pipeline/discussions'
+    about: 'Suggest extensions, follow-up work, or discuss the method here'
