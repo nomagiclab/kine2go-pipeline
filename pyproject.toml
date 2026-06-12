@@ -1,0 +1,60 @@
+[project]
+name = "kine2go-pipeline"
+version = "0.1.0"
+description = "Quadruped motion retargeting and imitation learning for the Unitree Go2 in Genesis"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "torch==2.10.0",
+    "genesis-world==0.3.10",
+    "matplotlib",
+    "gymnasium>=1.2.0",
+    "libigl==2.5.1",
+    "pot>=0.9.5",
+    "pre-commit>=4.3.0",
+    "pymeshlab==2023.12.post3",
+    "rsl-rl-lib==3.0.0",
+    "safetensors>=0.6.2",
+    "tensorboard>=2.20.0",
+    "trimesh>=4.7.1",
+    "tyro>=0.9.35",
+    "wandb>=0.21.0",
+    "cvxpy>=1.7.4",
+    "scipy>=1.16.2",
+]
+
+[dependency-groups]
+dev = [
+    "ipykernel>=6.30.1",
+    "ruff>=0.12.7",
+]
+
+[tool.ruff]
+line-length = 120
+indent-width = 4
+
+[tool.ruff.lint]
+select = [
+    "F",    # Pyflakes
+    "E",    # PyCodeStyle errors
+    "W",    # PyCodeStyle warnings
+    "UP",   # pyupgrade
+    "B",    # flake8-bugbear
+    "SIM",  # flake8-simplify
+    "C4",   # flake8-comprehensions
+    "COM",  # flake8-commas
+    "S",    # flake8-bandit
+    "RET",  # flake8-return
+    "FBT",  # flake8-boolean-trap
+    "ISC",  # flake8-implicit-str-concat
+    "ICN",  # flake8-import-conventions
+    "TID",  # flake8-tidy-imports
+    "I",    # isort
+]
+
+ignore = [
+    "RET504", # Assignment before return
+    "S301",   # Allow pickle
+    "S101",   # Allow asserts
+    "S403",   # Allow pickle importing
+]
