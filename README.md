@@ -5,8 +5,8 @@
 [![Python](https://img.shields.io/badge/python-%E2%89%A53.12-blue)](pyproject.toml)
 [![License](https://img.shields.io/badge/license-BSD--3--Clause-green)](LICENSE)
 [![Hugging Face Dataset](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Dataset-yellow)](https://huggingface.co/datasets/MIMUW-Robotics/kine2go)
-![arXiv](https://img.shields.io/badge/arXiv-coming%20soon-b31b1b)
-[![Website](https://img.shields.io/badge/Website-kine2go-blue)](https://nomagiclab.github.io/kine2go-pipeline/)
+[![arXiv](https://img.shields.io/badge/arXiv-coming%20soon-b31b1b)](https://arxiv.org/abs/2606.14433)
+[![Website](https://img.shields.io/badge/Website-kine2go-blue)](https://nomagiclab.github.io/kine2go/)
 
 [Installation](#installation) · [Quick Start](#quick-start) · [Pipeline](#pipeline) · [Stage details](#stage-details) · [Tools](#tools)
 
@@ -135,4 +135,19 @@ kine2go-pipeline/
 ├── go2_genesis/                        # Go2 locomotion env, RL training infra
 ├── tools/                              # rollout collection and post-processing
 └── pyproject.toml
+```
+
+## Citation
+If you use our work, please cite:
+
+```
+@misc{pałucki2026kine2gokinematicdatasetunitree,
+      title={Kine2Go: Kinematic dataset for the Unitree Go2 robot with diverse gaits and motions}, 
+      author={Władysław Pałucki and Paweł Siwak and Krzysztof Ciebiera and Marek Cygan},
+      year={2026},
+      eprint={2606.14433},
+      archivePrefix={arXiv},
+      primaryClass={cs.RO},
+      url={https://arxiv.org/abs/2606.14433}, 
+}
 ```

@@ -118,8 +118,18 @@ body {
     font-family: 'Inter', sans-serif !important;
     font-weight: 800 !important;
     color: var(--text-primary) !important;
-    margin-bottom: 2rem !important;
+    margin-bottom: 0.75rem !important;
     line-height: 1.1 !important;
+}
+
+.publication-subtitle {
+    font-family: 'Inter', sans-serif;
+    font-size: 1.75rem;
+    font-weight: 500;
+    line-height: 1.35;
+    color: var(--text-secondary);
+    margin: 0 auto 2rem;
+    max-width: 760px;
 }
 
 .publication-banner {
@@ -632,7 +642,12 @@ code {
   .publication-title {
     font-size: 2.5rem !important;
     line-height: 1.2 !important;
-    margin-bottom: 1.5rem !important;
+    margin-bottom: 0.75rem !important;
+  }
+
+  .publication-subtitle {
+    font-size: 1.25rem;
+    margin-bottom: 1.5rem;
   }
   
   .publication-authors {
@@ -680,6 +695,10 @@ code {
 @media screen and (max-width: 480px) {
   .publication-title {
     font-size: 2rem !important;
+  }
+
+  .publication-subtitle {
+    font-size: 1.1rem;
   }
   
   .hero-body {
