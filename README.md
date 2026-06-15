@@ -5,7 +5,7 @@
 [![Python](https://img.shields.io/badge/python-%E2%89%A53.12-blue)](pyproject.toml)
 [![License](https://img.shields.io/badge/license-BSD--3--Clause-green)](LICENSE)
 [![Hugging Face Dataset](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Dataset-yellow)](https://huggingface.co/datasets/MIMUW-Robotics/kine2go)
-[![arXiv](https://img.shields.io/badge/arXiv-coming%20soon-b31b1b)](https://arxiv.org/abs/2606.14433)
+[![arXiv](https://img.shields.io/badge/arXiv-2606.14433-b31b1b)](https://arxiv.org/abs/2606.14433)
 [![Website](https://img.shields.io/badge/Website-kine2go-blue)](https://nomagiclab.github.io/kine2go/)
 
 [Installation](#installation) · [Quick Start](#quick-start) · [Pipeline](#pipeline) · [Stage details](#stage-details) · [Tools](#tools)
