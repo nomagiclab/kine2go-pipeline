@@ -300,16 +300,59 @@ body {
   font-weight: 500;
 }
 
-.motion-video-carousel .item {
-  max-width: 420px;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 1rem;
+.motion-video-carousel {
+  background: var(--background-secondary);
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius-lg);
+  padding: 2rem;
 }
 
-.motion-video-carousel video {
-  max-height: 280px;
-  object-fit: contain;
+.motion-video-carousel .item {
+  margin: 0;
+  padding: 0.75rem;
+  max-width: none;
+  background: transparent;
+  border: none;
+  box-shadow: none;
+}
+
+.motion-video-carousel .item:hover {
+  transform: none;
+  box-shadow: none;
+}
+
+.motion-card {
+  height: 100%;
+  background: var(--background-primary);
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow-md);
+  padding: 1rem;
+  transition: var(--transition);
+}
+
+.motion-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+}
+
+.motion-card-title {
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 1.15rem;
+  color: var(--text-primary);
+  text-align: center;
+  margin-bottom: 0.75rem;
+}
+
+.motion-card video {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  object-position: center 70%;
+  background: #000;
+  border-radius: var(--border-radius);
 }
 
 .pipeline-figure {
