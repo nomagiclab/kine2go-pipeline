@@ -264,7 +264,7 @@
   <div class="container is-max-desktop">
     <div class="hero-body">
       <!-- TODO: Replace with your teaser video -->
-      <video poster="" id="tree" autoplay controls muted height="100%" preload="metadata">
+      <video poster="" id="tree" autoplay muted playsinline height="100%" preload="metadata">
         <!-- TODO: Add your video file path here -->
         <source src="static/videos/mosaic_web.mp4" type="video/mp4">
       </video>
@@ -286,7 +286,7 @@
         <div class="content has-text-justified">
           <!-- TODO: Replace with your paper abstract -->
           <p>
-            The recent popularity of robotics, combined with the steadily decreasing cost of robotic hardware, has lowered the entry barrier to robotics research and enabled rapid advancements in the field. One of the primary examples is the Unitree Go2 quadruped robot, which is often used by researchers in the areas of locomotion, navigation, control, and others. Many researchers use the Go2 robot in combination with techniques like imitation learning, reinforcement learning, and behavioral cloning to allow machine learning systems to take full control of the robot. At the same time, many of those techniques require demonstration data consisting of the robot's kinematics information and actions applied to the motors. Obtaining such data is difficult, requires building complex pipelines, and can take significant time. To aid in those kinds of efforts, we present \texttt{Kine2Go} - a dataset with 800 diverse gait kinematics trajectory motion data for the Unitree Go2 robot, derived from 40 distinct policies. Our pipeline accepts data from various quadruped morphologies and translates them to a Go2-compatible format. Then we use Reinforcement Learning to train policies following a given motion, and finally we gather data from those policies, which grants robust, perturbed kinematic data with corresponding motor-level actions. 
+            The recent popularity of robotics, combined with the steadily decreasing cost of robotic hardware, has lowered the entry barrier to robotics research and enabled rapid advancements in the field. One of the primary examples is the Unitree Go2 quadruped robot, which is often used by researchers in the areas of locomotion, navigation, control, and others. Many researchers use the Go2 robot in combination with techniques like imitation learning, reinforcement learning, and behavioral cloning to allow machine learning systems to take full control of the robot. At the same time, many of those techniques require demonstration data consisting of the robot's kinematics information and actions applied to the motors. Obtaining such data is difficult, requires building complex pipelines, and can take significant time. To aid in those kinds of efforts, we present <strong>Kine2Go</strong> - a dataset with 800 diverse gait kinematics trajectory motion data for the Unitree Go2 robot, derived from 40 distinct policies. Our pipeline accepts data from various quadruped morphologies and translates them to a Go2-compatible format. Then we use Reinforcement Learning to train policies following a given motion, and finally we gather data from those policies, which grants robust, perturbed kinematic data with corresponding motor-level actions. 
           </p>
         </div>
       </div>
@@ -357,38 +357,56 @@
 <!-- Video carousel -->
 <section class="hero is-small">
   <div class="hero-body">
-    <div class="container">
-      <h2 class="title is-3">Example Videos of motions</h2>
+    <div class="container is-max-desktop">
+      <h2 class="title is-3 has-text-centered">Example Videos of motions</h2>
       <div id="results-carousel" class="carousel results-carousel motion-video-carousel">
         <div class="item item-video1">
-          <!-- TODO: Add poster image for better preview -->
-          <video poster="" id="video1" controls muted loop height="100%" preload="metadata">
-            <!-- Your video file here -->
-            <source src="static/videos/trot_web.mp4" type="video/mp4">
-          </video>
-          <h2 class="subtitle has-text-centered">
-            Trot motion rollout.
-          </h2>
+          <div class="motion-card">
+            <h4 class="motion-card-title">Trot</h4>
+            <video poster="" id="video1" autoplay muted loop playsinline preload="metadata">
+              <source src="static/videos/trot_web.mp4" type="video/mp4">
+            </video>
+          </div>
         </div>
         <div class="item item-video2">
-          <!-- TODO: Add poster image for better preview -->
-          <video poster="" id="video2" controls muted loop height="100%" preload="metadata">
-            <!-- Your video file here -->
-            <source src="static/videos/canter_web.mp4" type="video/mp4">
-          </video>
-          <h2 class="subtitle has-text-centered">
-            Canter motion rollout.
-          </h2>
+          <div class="motion-card">
+            <h4 class="motion-card-title">Canter</h4>
+            <video poster="" id="video2" autoplay muted loop playsinline preload="metadata">
+              <source src="static/videos/canter_web.mp4" type="video/mp4">
+            </video>
+          </div>
         </div>
         <div class="item item-video3">
-          <!-- TODO: Add poster image for better preview -->
-          <video poster="" id="video3" controls muted loop height="100%" preload="metadata">
-            <!-- Your video file here -->
-            <source src="static/videos/jump_web.mp4" type="video/mp4">
-          </video>
-          <h2 class="subtitle has-text-centered">
-            Jump motion rollout.
-          </h2>
+          <div class="motion-card">
+            <h4 class="motion-card-title">Jump</h4>
+            <video poster="" id="video3" autoplay muted loop playsinline preload="metadata">
+              <source src="static/videos/jump_web.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
+        <div class="item item-video4">
+          <div class="motion-card">
+            <h4 class="motion-card-title">Crawl</h4>
+            <video poster="" id="video4" autoplay muted loop playsinline preload="metadata">
+              <source src="static/videos/crawl_web.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
+        <div class="item item-video5">
+          <div class="motion-card">
+            <h4 class="motion-card-title">Ellipse</h4>
+            <video poster="" id="video5" autoplay muted loop playsinline preload="metadata">
+              <source src="static/videos/ellipse_web.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
+        <div class="item item-video6">
+          <div class="motion-card">
+            <h4 class="motion-card-title">Turn</h4>
+            <video poster="" id="video6" autoplay muted loop playsinline preload="metadata">
+              <source src="static/videos/right_web.mp4" type="video/mp4">
+            </video>
+          </div>
         </div>
       </div>
     </div>
