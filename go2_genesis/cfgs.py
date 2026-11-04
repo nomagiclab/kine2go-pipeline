@@ -202,6 +202,9 @@ def get_backflip_cfgs():
                 "gravity_y": -10.0,
                 "feet_distance": -1.0,
                 "action_rate": -0.001,
+		"collision": -20.0,
+		"default_pose_after_jump": -0.2,
+                "dof_pos_limits": -0.3,
             },
         },
     )
