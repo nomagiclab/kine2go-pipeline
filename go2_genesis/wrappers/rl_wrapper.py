@@ -245,3 +245,9 @@ class Go2(LocoEnv):
             self.foot_positions[:, BACK_FEET, Z_AXIS_INDEX] - self.base_pos[:, Z_AXIS_INDEX].unsqueeze(1)
         ).mean(dim=1)
         return feet_height
+
+    def _reward_default_pose_after_jump(self):
+        # Encourage reaching default pose after backflip
+        current_time = self.episode_length_buf * self.dt
+        pose = torch.sum(torch.abs(self.dof_pos - self.default_dof_pos), dim=1)
+        return pose * (current_time > BACKFLIP_ROTATION_END_S)
